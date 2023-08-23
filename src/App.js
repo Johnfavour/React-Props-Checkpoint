@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import PlayerList from './PlayerList';
+import Navbar from 'react-bootstrap/Navbar';
+
 
 function App() {
   return (
+    // The header tag
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Header" style ={{textAlign: 'center', marginTop: '30px'}}>
+      <Navbar.Brand href="#home" style = {{fontSize: '40px', fontWeight: '600'}}>FIFA player cards</Navbar.Brand></div>
+      <PlayerList/>
     </div>
   );
 }
