@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function App() {
   return (
-    // The header tag
+    // The header container
     <div className="App">
     <div className="Header" style ={{textAlign: 'center', marginTop: '30px'}}>
       <Navbar.Brand href="#home" style = {{fontSize: '40px', fontWeight: '600'}}>FIFA player cards</Navbar.Brand></div>
